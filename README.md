@@ -1,54 +1,97 @@
-# React + TypeScript + Vite
+# Pokédex App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" width="150" />
+  <h3>A modern Pokémon encyclopedia built with React</h3>
+</div>
 
-Currently, two official plugins are available:
+## 📋 Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This Pokédex application allows users to browse, search, and explore Pokémon from all generations. Built with React, TypeScript, and powered by the PokeAPI, it features a responsive design with smooth animations and infinite scrolling for an engaging user experience.
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Pokémon Browse**: View a comprehensive list of Pokémon with infinite scrolling
+- **Search Functionality**: Find any Pokémon by name
+- **Detailed Information**: View detailed stats, abilities, and characteristics for each Pokémon
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **Modern UI**: Clean, intuitive interface with seamless animations
+- **Performance Optimized**: Fast loading times with React Query caching
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Tech Stack
+
+- **React** - UI library
+- **TypeScript** - Type safety and better developer experience
+- **React Query** - Data fetching and cache management
+- **Framer Motion** - Smooth animations and transitions
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Navigation and routing
+- **PokeAPI** - Pokémon data source
+
+## 🛠️ Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/supriadiacep/portofolio-pokedex.git
+   cd portofolio-pokedex
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## �� Project Structure
+
+```bash
+src/
+├── api/ # API calls and axios config
+├── assets/ # Static assets (images, SVGs)
+├── components/ # React components
+│ ├── Hero/ # Hero section components
+│ ├── List/ # List section for displaying pokémon
+│ ├── Pokemon/ # Pokémon detail components
+│ └── ui/ # Reusable UI components
+├── hooks/ # Custom React hooks
+├── models/ # TypeScript interfaces and types
+├── pages/ # Page components
+└── utils/ # Utility functions
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔍 Usage
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Browse Pokémon**: Scroll through the list or use the "Load More" button to see additional Pokémon
+- **Search**: Use the search bar to find specific Pokémon by name
+- **View Details**: Click on a Pokémon card to see detailed information
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+
+- [PokeAPI](https://pokeapi.co/) for providing the Pokémon data
+- [Pokémon](https://www.pokemon.com/) for the inspiration and Pokémon assets
+- [React Query](https://tanstack.com/query/latest) for the excellent data fetching library
+- [Framer Motion](https://www.framer.com/motion/) for the animation capabilities
+
+---
+
+<div align="center">
+  <p>Made with ❤️ by Supriadi Acep</p>
+  <p>© 2023 Pokédex App. All rights reserved.</p>
+</div>
