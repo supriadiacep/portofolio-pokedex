@@ -53,7 +53,7 @@ This Pokédex application allows users to browse, search, and explore Pokémon f
    yarn dev
    ```
 
-4. Open your browser and navigate to `http://localhost:3000`
+4. Open your browser and navigate to `http://localhost:5173`
 
 ## �� Project Structure
 
