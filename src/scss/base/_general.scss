@@ -1,0 +1,16 @@
+@import '../variables/fonts';
+@import '../functions/rem-calc';
+
+:root {
+  background-color: white;
+}
+
+.container {
+  max-width: rem-calc(1216);
+  margin: 0 auto;
+  padding: 0 rem-calc(16);
+
+  @include md {
+    padding: 0 rem-calc(32);
+  }
+}

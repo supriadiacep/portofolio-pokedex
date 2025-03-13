@@ -1,0 +1,64 @@
+.hero {
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/mathematics.png');
+    background-size: cover;
+    background-repeat: repeat;
+    width: calc(100% + 50px);
+    height: 100%;
+    z-index: -2;
+    left: rem-calc(-50px);
+    top: 0;
+
+    @include md {
+      background-size: contain;
+      background-repeat: repeat-x;
+    }
+  }
+}
+
+.wave::before {
+  content: '';
+  position: absolute;
+  background-image: url('../../assets/wave.png');
+  background-size: 100% 100%;
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: rem-calc(82);
+  left: -1px;
+  bottom: 0;
+
+  @include md {
+    background-repeat: repeat-x;
+    background-position: right bottom;
+    background-size: 100% 100%;
+    width: calc(50% + rem-calc(2));
+    height: auto;
+    aspect-ratio: 10/2;
+  }
+
+  @include xxl {
+    height: rem-calc(132);
+  }
+}
+
+.wave::after {
+  @include md {
+    content: '';
+    position: absolute;
+    background-image: url('../../assets/wave.png');
+    background-size: 100% 100%;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    width: calc(50% + rem-calc(4));
+    aspect-ratio: 10/2;
+    bottom: 0;
+    left: calc(50% - rem-calc(2));
+  }
+
+  @include xxl {
+    height: rem-calc(132);
+  }
+}
